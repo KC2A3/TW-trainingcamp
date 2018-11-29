@@ -1,4 +1,9 @@
-function countWords(message) {
+function splitString(message) {
   let words = message.split(' ');
-  console.log(words.length);
+  return words;
+}
+
+function countWords(sentence) {
+  let result = splitString(sentence).length;
+  console.log(result);
 }

@@ -1,5 +1,9 @@
-function alphabetSort(message) {
-  let word = message.split('');
-  let wordSort = word.sort().join('');
-  console.log(wordSort);
+function SplitIntoLetters(message) {
+  let words = message.split('');
+  return words;
+}
+
+function alphabetSort(word) {
+  let wordSort = SplitIntoLetters(word).sort();
+  console.log(wordSort.join(''));
 }

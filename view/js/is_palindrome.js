@@ -1,4 +1,4 @@
-function reverseString(message) {
-  let reverseMessage = message.split('').reverse().join('');
-  console.log(message == reverseMessage);
+function isPalindrome(message) {
+  let reverseMessage = reverseString(message);
+  console.log(message === reverseMessage);
 }

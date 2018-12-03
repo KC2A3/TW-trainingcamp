@@ -3,5 +3,12 @@ var fruit = {
   pear: 20,
   peach: 10
 };
-var totalNumber = fruit.apple + fruit.pear + fruit.peach;
-console.log(totalNumber);
+
+function sumOfFruit(obj) {
+  let sum = 0;
+  for (key in obj) {
+    sum = sum + obj[key];
+  }
+  return sum;
+}
+console.log(sumOfFruit(fruit));
